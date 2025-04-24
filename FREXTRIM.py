@@ -32,7 +32,7 @@ def framecap(test_video):
     fps = int(video_capture.get(cv2.CAP_PROP_FPS))  # Frames per second
     success, image = video_capture.read()
     count = 0
-    sec_count = 0
+    sec_count = 1
 
     while success:
         if count % fps == 0:  # Capture one frame every second
